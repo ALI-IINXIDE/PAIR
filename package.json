@@ -9,7 +9,7 @@
     "restart": "pm2 restart khan-md"
   },
   "dependencies": {
-    "baileys": "github:Jeliostarr/DEV-Baileys",
+    "baileys": "github:Ali-Xer/Baileys",
     "@adiwajshing/keyed-db": "^0.2.4",
     "jimp": "^0.16.1",
     "qrcode": "^1.5.3",
