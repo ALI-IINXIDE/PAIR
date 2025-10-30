@@ -1,17 +1,18 @@
 {
   "name": "web-pair",
-  "version": "0.0.1",
-  "description": "A multi functional whatsapp bot Web paircode.",
+  "version": "1.0.0",
+  "description": "A multi-functional WhatsApp bot Paircode service.",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name khan-md",
+    "start": "npm install --legacy-peer-deps && pm2 start index.js --name khan-md",
     "stop": "pm2 stop khan-md",
     "restart": "pm2 restart khan-md"
   },
   "dependencies": {
-    "baileys": "latest",
+    "@whiskeysockets/baileys": "github:Ali-Xer/Baileys",
     "@adiwajshing/keyed-db": "^0.2.4",
-    "jimp": "^0.16.1",
+    "jimp": "^1.6.0",
     "qrcode": "^1.5.3",
     "awesome-phonenumber": "^2.64.0",
     "pino": "^8.1.0",
@@ -21,6 +22,13 @@
     "path": "^0.12.7",
     "megajs": "1.1.7",
     "pm2": "^5.4.0",
-    "async-mutex": "0.4.1"
+    "async-mutex": "^0.4.1",
+    "zlib": "^1.0.5"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "overrides": {
+    "jimp": "^1.6.0"
   }
 }
