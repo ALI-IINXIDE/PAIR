@@ -4,14 +4,14 @@
   "description": "A multi functional whatsapp bot Web paircode.",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name khan-md",
+    "start": "pm2 start index.js --name khan-md",
     "stop": "pm2 stop khan-md",
     "restart": "pm2 restart khan-md"
   },
   "dependencies": {
     "baileys": "github:Ali-Xer/Baileys",
     "@adiwajshing/keyed-db": "^0.2.4",
-    "jimp": "^0.16.1",
+    "jimp": "^1.6.0",
     "qrcode": "^1.5.3",
     "awesome-phonenumber": "^2.64.0",
     "pino": "^8.1.0",
@@ -21,6 +21,13 @@
     "path": "^0.12.7",
     "megajs": "1.1.7",
     "pm2": "^5.4.0",
-    "async-mutex": "0.4.1"
+    "async-mutex": "0.4.1",
+    "zlib": "^1.0.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "overrides": {
+    "jimp": "^1.6.0"
   }
 }
