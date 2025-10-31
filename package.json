@@ -10,7 +10,7 @@
     "build": "npm install --legacy-peer-deps"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "github:Ali-Xer/Baileys",
+    "@whiskeysockets/baileys": "latest",
     "@adiwajshing/keyed-db": "^0.2.4",
     "jimp": "^1.6.0",
     "qrcode": "^1.5.3",
